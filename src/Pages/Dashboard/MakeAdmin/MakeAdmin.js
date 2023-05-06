@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://rocky-reef-13015.herokuapp.com/users/admin', {
+        fetch('https://doctors-portal-server-sigma-ten.vercel.app/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

@@ -43,7 +43,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         // send to the server
-        fetch('https://rocky-reef-13015.herokuapp.com/appointments', {
+        fetch('https://doctors-portal-server-sigma-ten.vercel.app/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

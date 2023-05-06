@@ -13,8 +13,8 @@ const Appointments = ({ date }) => {
     const [appointments, setAppointments] = useState([])
 
     useEffect(() => {
-        const url = `https://rocky-reef-13015.herokuapp.com/appointments?email=${user.email}&date=${date.toLocaleDateString()}`
-        fetch(url,{
+        const url = `https://doctors-portal-server-sigma-ten.vercel.app/appointments?email=${user.email}&date=${date.toLocaleDateString()}`
+        fetch(url, {
             headers: {
                 'authorization': `Bearer ${token}`
             }
